@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake Button</title>
+    <style>
+  body {
+    background-color: #010101;
+    width:100vw;
+    height:100vh;
+    display: grid;
+    place-items: center;
+& button {
+    font-size: 1.2rem;
+    padding:1em 3.5em;
+    border:2px solid purple;
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: transparent;
+}  
+
+}
+button:hover {
+    background-color: blueviolet;
+    color:#fff;
+    cursor: pointer;
+    border: 2px solid red;
+    animation:shakeBtn .5s linear infinite;
+}
+@keyframes shakeBtn {
+     0% {
+  rotate: 20deg;
+     }
+     50% {
+rotate: -20deg;
+     }
+     100% {
+rotate: 20deg;
+     }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+        <button>Shake Me</button>
+
+</body>
+</html>

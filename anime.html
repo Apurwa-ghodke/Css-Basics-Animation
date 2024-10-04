@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Run</title>
+<style> 
+    body {
+        width: 100vw;
+        height: 100vh;
+        background: url(./images/mario-bg.webp);
+        background-size: 100% 100%;   
+    }
+    img {
+        width:200px;
+    position: absolute;
+    bottom: 71px;
+   mix-blend-mode: multiply;
+   filter: brightness(100%);
+ animation:  marioRun 5s linear alternate infinite;
+ animation-direction: calc(100vw-200px);
+}
+@keyframes marioRun {
+from {
+ translate: 2vw 0;
+}
+to {
+        translate: 85vw 0;
+
+    }
+}
+
+
+</style>
+
+
+
+
+    </head>
+
+
+
+    <body>
+    <img src="./images/Tumblr.gif" alt="">
+</body>
+</html>

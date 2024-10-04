@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader </title>
+    <style>
+        body {
+            background-color: #010101;
+        }
+        html {
+            height:100vh;
+            display: grid;
+            place-items:center;  
+        }
+ .loader {
+    width:15rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+ background-color: blueviolet;
+ animation: loader 1.5s linear infinite reverse; 
+}
+.loader::after {
+     content: "";
+     width:13rem;
+     background-color: #010101;
+     border-radius: 50%;
+     position: absolute;
+     top:0;
+     left:0;
+     aspect-ratio: 1;
+}
+.loader::before {
+    content: "";
+     width:3.5rem;
+     background-color: blueviolet;
+     aspect-ratio:1;
+     border-radius: 50%;
+     position: absolute;
+     top:-1rem;
+     left:4.5rem;
+     z-index: 1;
+box-shadow: 2px 1px 1px violet, 2px 1px 2px violet,2px 1px 4px violet,2px 2px 6px violet;    
+    }
+    @keyframes loader {
+          100% {
+  rotate: 360deg;
+          }
+    }
+    </style>
+</head>
+<body>
+    <div class="loader">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation </title>
+ <style>
+    body {
+        width:100vw;
+        height:100vh;
+        display: grid;
+        background-color: #010101;
+        place-items: center;
+    }
+    h1 {
+        font-size: 96px;
+        color:#fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+    h1:before {
+        content:"JAVASCRIPT...";
+        color: gold;
+        font-size: 96px;
+        overflow: hidden;
+        border-right: 2px solid #fff;
+        position: absolute;
+        top:0;
+        left:0;
+    animation: textRevel 1s linear infinite alternate;
+    }
+    @keyframes textRevel {
+        0% {
+  width:0%;
+        }
+        50% {
+            width:50%;
+
+        }
+        100% {
+            width: 100%;
+        }
+    }
+ </style>
+</head>
+<body>
+     <h1>JAVASCRIPT...</h1>
+</body>
+</html>

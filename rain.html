@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rain animation</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+
+        /* background: rgba(0, 0, 0, 0.5), url(./images/home.webp); */
+        /* background-size: 100% 100%; */
+        /* background-blend-mode: darken; */
+      }
+      .rain {
+        background:url("./images/bg-2.avif");
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rain .4s linear infinite reverse;
+      }
+      @keyframes rain {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 0% 100%;
+        }
+      }
+    </style>
+    <div class="rain"></div>
+  </head>
+  <body></body>
+</html>

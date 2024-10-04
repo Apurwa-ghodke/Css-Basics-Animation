@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+ display: grid;
+ place-items: center;
+ width:100vw;
+ height: 100vh;
+ 
+ }
+ 
+.container{
+    width:60vw;
+    height:80vh;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5) ;
+    background-image:url('https://bityl.co/QxQ7');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    animation: gallery 8s linear infinite;    
+}
+@keyframes gallery {
+  0% {
+    background-image: url('https://bityl.co/QxQ7');
+    max-width: 100%;
+  }
+  20% {
+  max-width: 100%;
+    background-image: url('https://bityl.co/QxQK');
+
+  }
+  40% {
+    background-image: url('https://bityl.co/QxQN');
+    max-width: 100%;
+
+  }
+  60% {
+background-image: url('https://bityl.co/QxQP');
+  max-width: 100%;
+
+  }
+  80% {
+    background-image: url('https://bityl.co/QxQR');
+  max-width: 100%;
+
+  }
+  100% {
+    background-image: url('https://bityl.co/QxQT');
+  max-width: 100%;
+
+  }
+}

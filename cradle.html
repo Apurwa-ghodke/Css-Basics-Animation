@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewTon Cradle</title>
+<style>
+    html {
+        font-size: 62.5%;
+    }
+body {
+     height:100vh;
+     margin-top: 5rem;
+     display: grid;
+
+     justify-content: center;
+     background-color: #010101;
+}
+.cradle  {
+    width:50rem;
+    height:1.5rem;
+    border: 2px solid purple;
+    border-radius: 1rem;   
+    background-color: transparent;
+    background-color: blueviolet;
+ display: flex;
+ justify-content: center;
+ gap:4.5rem;
+
+}
+div {
+    width:0.5rem;
+    height: 20rem;
+    background-color: blueviolet;
+  position: relative;
+}
+.cradle div::before{
+    content: "";
+    width:5rem;
+    aspect-ratio: 1;
+    background-color: blueviolet;
+    position: absolute;
+    left:-2.5rem;
+    top:100%;
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+}
+.cradle div:first-child{
+ animation: left-swing 2s linear infinite;
+  transform-origin: top left;
+}
+@keyframes left-swing {
+     0% {
+         rotate: 0deg;
+        }
+        25% {
+            rotate: 30deg;
+        }
+     50% {
+        rotate: 0deg;
+      }
+     100% {
+        rotate: 0deg;
+      }
+    }
+
+    .cradle div:last-child{
+ animation: right-swing 2s linear 1s infinite;
+  transform-origin: top right;
+}
+@keyframes right-swing {
+     0% {
+         rotate: 0deg;
+        }
+        25% {
+            rotate: -30deg;
+     }
+     50% {
+        rotate: 0deg;
+     }
+     100% {
+        rotate: 0deg;
+     }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="cradle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
